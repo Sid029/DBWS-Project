@@ -1,0 +1,479 @@
+html{
+    width:100%;
+}
+
+.logo{
+    position: absolute;
+    top:0.5vw;
+    left:4vh;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color:black;
+}
+
+.title{
+    letter-spacing:0.3vw;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(216, 31, 31);
+    font-family: fantasy;
+    font-weight: bolder;
+    margin:.5%;
+}
+
+
+.disclaimer{
+    color:white;
+}
+
+.login{
+    position:absolute;
+    top:15px;
+    right:10px;
+}
+
+button{
+    cursor:pointer;
+    background-color: rgb(29, 24, 24);
+    color: white;
+    border-radius:4px;
+    padding:5px;
+    margin:4px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+}
+
+button:hover{
+    transform:scale(1.03);
+    animation:rainbow 2.5s infinite;
+    transition:0.6s;
+    background-color: rgba(0, 0, 0, 0.432);
+    box-shadow: 0 0 3px #fd4c3f, 0 0 7px #fd4c3f, 0 0 20px #fd4c3f;
+}
+
+.card-body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    background-color: black;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-body-title{
+    position: absolute;
+    left: 22vw;
+    top: 13vw;
+    transform: translate(-50%,-50%);
+    width:700px;
+    height:50px;
+    line-height: 50px;
+    background: black;
+    overflow: hidden;
+}
+
+.card-body-title span{
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-style: italic;
+    background: darkred;
+    display: inline-block;
+    padding:2px 20px;
+    animation: rainbow 2.5s infinite;
+}
+
+@keyframes rainbow{
+    100%,0%{
+        color: rgba(255, 0, 0, 0.836);
+    }
+    10%{
+        color: rgba(255, 128, 0, 0.856);
+    } 
+    20%{
+        color: rgba(255, 255, 0, 0.842);
+    }
+    30%{
+        color: rgba(128, 255, 0, 0.726);
+    }
+    40%{
+        color: rgba(0, 255, 0, 0.774);
+    }
+    50%{
+        color: rgba(0, 255, 128, 0.836);
+    }
+    60%{
+        color: rgba(0, 255, 255, 0.651);
+    }
+    70%{
+        color: rgba(0, 128, 255, 0.747);
+    }
+    80%{
+        color: rgba(0, 0, 255, 0.719);
+    }
+    90%{
+        color: rgba(128, 0, 255, 0.747);
+    }
+    100%{
+        color: rgba(255, 0, 255, 0.582);
+    }
+}
+
+.card-body-title span:before{
+    position:absolute;
+    content:"";
+    width:87%;
+    height:100%;
+    background: darkred;
+    z-index:-1;
+    transform: rotate(45deg);
+}
+
+
+.card{
+    opacity:0.9;
+    border: 5px solid darkred;
+    display:grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 250px 190px 60px;
+    margin:2%;
+    grid-template-areas: "image" "text" "review";
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,1);
+    text-align: center;
+}
+
+.card:hover{
+    opacity:1;
+    transform: scale(1.04);
+    cursor: pointer;
+    transition:0.6s; 
+}
+
+
+hr{
+    border-color: darkred;;
+    background-color: darkred;
+    width: 99%;
+    height:2%;
+}
+
+.imagea{
+    grid-area: image;
+    background:url("fif4.jpeg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+}
+
+.imageb{
+    grid-area: image;
+    background:url("road.jpeg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+}
+
+.imagec{
+    grid-area: image;
+    background:url("styleme.jpeg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+}
+
+
+.text{
+    background-color:black;
+}
+
+.text h1{
+    grid-area: text;
+    color:red;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    grid-area: text;
+}
+
+.text p{
+    grid-area: text;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color:white;
+    margin:10px;
+    padding:10px;
+    grid-area: text;
+}
+
+.review{
+    grid-area: review;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: darkred;
+}
+
+.review .stat{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.review .type{
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.review .value{
+    font-size: 11px;
+    font-weight:500;
+}
+
+.checked {
+    color: orange;
+}
+
+.border{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+.borderb{
+    border-right: 1px solid black;
+}
+
+.navbar{
+    width: 100vw;
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+    }
+
+.navbar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:left;
+}
+
+    /* Links inside the navbar */
+    .navbar ul li a{
+    border-radius:4px;
+    text-decoration: none;
+    position:relative;
+    display: flex;
+    font: 100% system-ui;
+    float: left;
+    font-size: 25px;
+    color: rgb(156, 41, 41);
+    text-align: center;
+    padding-left: 45px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 45px;
+    text-decoration: none;
+    }
+
+     /* Add a red background color to navbar links on hover */
+    
+     .navbar ul li a:hover {
+         color:red;
+         background-color: rgba(0, 0, 0, 0.432);
+         box-shadow: 0 0 10px #fd4c3f, 0 0 7px #fd4c3f, 0 0 20px #fd4c3f;
+         transition: 0.6s;
+     }
+
+    /* The dropdown container */
+    .dropbtn ul li{
+    float: left;
+    overflow: hidden;
+    }
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+    letter-spacing: .09em;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+    display: none;
+    overflow: auto;
+    position: absolute;
+    background-color: #333;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+    border-radius:4px;
+    color: black;
+    display: block;
+    text-align: center;
+    }
+
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content li a:hover {
+        overflow: hidden;
+        background-color: black;
+        transition: 0.66s;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display:block;
+        position: absolute;
+    }
+
+
+    .goty{
+        cursor: pointer;
+        position: relative;
+        text-align: center;      
+    }
+
+    .goty img{ 
+        border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    }
+
+    .goty-title{
+        position: absolute;
+        top: 1vw;
+        left: 10vw;       
+        display:table-cell;
+        font-size: 55px;
+        animation: textflicker 2.3s linear infinite;
+    }
+
+    goty-title span:nth-child(1){
+        animation-delay: 0s;
+    }
+
+    goty-title span:nth-child(2){
+        animation-delay: 0.25s;
+    }
+
+    goty-title span:nth-child(3){
+        animation-delay: 0.5s;
+    }
+
+    goty-title span:nth-child(4){
+        animation-delay: 0.75s;
+    }
+
+    goty-title span:nth-child(5){
+        animation-delay: 1s;
+    }
+
+   
+ @keyframes textflicker {
+        0%,100%{
+            color:white;
+            filter:blur(2px);
+            text-shadow:0 0 10px #fc2424,
+            0 0 10px #fc2424,
+            0 0 30px #fc2424,
+            0 0 60px #fc4424,
+            0 0 90px #fc2424,
+            0 0 100px #fc2424;
+        }
+        5%,100%{
+            color:white;
+            filter:blur(0px);
+            text-shadow:0 0 10px none;
+        }
+}
+
+.goty .desc{
+    letter-spacing: 0.3vw;
+    animation: textflicker 2.3s linear infinite;
+    background-color: transparent;
+    position: absolute;
+    top: 10vw;
+    left: 13vw;       
+}
+
+.goty .desc p{
+    float: left;
+    font-size: 20px;
+    margin:2vh;
+}
+
+.goty .desc .footerscore1{
+    position: absolute;
+    top: 36vw;
+    left:10vw;
+}
+
+.goty .desc .footerscore2{
+    position:absolute;
+    top:36vw;
+    left:30vw;
+}
+
+.goty .desc .footerscore3{
+    position:absolute;
+    top:36vw;
+    right:0vw;
+}
+
+.goty .desc .bottom-left{
+    position: absolute;
+    width:52%;
+    top:17vw;
+}
+
+.goty .desc .bottom-right{
+    position:relative;
+    width:50%;
+    left:40vw;
+    top: 5.8vw;
+}
+
+.goty .desc .bottom-left:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+ 
+.goty .desc .bottom-right:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+.Disclaimer{
+    color:white;
+}
+ 

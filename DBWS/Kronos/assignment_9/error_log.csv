@@ -1,0 +1,10 @@
+Time,IP,Errors,Website
+Fri Nov 12 11:01:38.284374 2021,  10.82.210.200:56901, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/maintenance.php on line 8, https://clabsql.clamv.jacobs-university.de/~schhabra/index.html
+Fri Nov 12 11:01:38.284420 2021,  10.82.210.200:56901, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/maintenance.php on line 12, https://clabsql.clamv.jacobs-university.de/~schhabra/index.html
+Sat Nov 13 14:31:48.003456 2021,  10.82.210.200:50536, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/maintenance.php on line 8, https://clabsql.clamv.jacobs-university.de/~schhabra/index.html
+Sat Nov 13 14:31:48.003532 2021,  10.82.210.200:50536, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/maintenance.php on line 12, https://clabsql.clamv.jacobs-university.de/~schhabra/index.html
+Sat Nov 13 14:32:06.378629 2021,  10.82.210.200:50536, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/game.php on line,v 13 14:32:06.378629 2021] [php7:notice] [pid 2637] [client 10.82.210.200:50536] PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/game.php on line 6
+Sun Nov 14 15:31:28.740389 2021,  10.82.210.200:53917, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/maintenance.php on line 8, https://clabsql.clamv.jacobs-university.de/~schhabra/index.html
+Sun Nov 14 15:31:28.740536 2021,  10.82.210.200:53917, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/maintenance.php on line 12, https://clabsql.clamv.jacobs-university.de/~schhabra/index.html
+Sun Nov 14 21:22:36.017038 2021,  10.82.216.169:61925, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/maintenance.php on line 8, https://clabsql.clamv.jacobs-university.de/~schhabra/imprint.html
+Sun Nov 14 21:22:36.017078 2021,  10.82.216.169:61925, PHP Notice:  Undefined index: username in /people/home/schhabra/public_html/maintenance.php on line 12, https://clabsql.clamv.jacobs-university.de/~schhabra/imprint.html
